@@ -1,0 +1,941 @@
+19:11:07 INFO  : Registering command handlers for Vitis TCF services
+19:11:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\JJM\260504_MicroBlaze_SPI\workspace\temp_xsdb_launch_script.tcl
+19:11:09 INFO  : Platform repository initialization has completed.
+19:11:09 INFO  : XSCT server has started successfully.
+19:11:09 INFO  : plnx-install-location is set to ''
+19:11:10 INFO  : Successfully done setting XSCT server connection channel  
+19:11:10 INFO  : Successfully done query RDI_DATADIR 
+19:11:10 INFO  : Successfully done setting workspace for the tool. 
+19:11:44 INFO  : Result from executing command 'getProjects': design_1_wrapper
+19:11:44 INFO  : Result from executing command 'getPlatforms': 
+19:11:44 WARN  : An unexpected exception occurred in the module 'platform project logging'
+19:11:44 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+19:11:47 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+20:37:59 INFO  : Result from executing command 'getProjects': design_1_wrapper
+20:37:59 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+20:37:59 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:40:09 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:40:18 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:42:54 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:43:16 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:44:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:45:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:45:05 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+20:45:05 INFO  : 'jtag frequency' command is executed.
+20:45:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+20:45:05 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+20:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:06 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:45:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:06 INFO  : System reset is completed.
+20:45:09 INFO  : 'after 3000' command is executed.
+20:45:09 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:09 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+20:45:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+20:45:09 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:09 INFO  : 'con' command is executed.
+20:45:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+20:45:09 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+20:45:16 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:45:18 INFO  : Disconnected from the channel tcfchan#2.
+20:45:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:45:19 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+20:45:19 INFO  : 'jtag frequency' command is executed.
+20:45:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+20:45:20 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+20:45:20 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:20 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:45:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:45:20 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:20 INFO  : System reset is completed.
+20:45:23 INFO  : 'after 3000' command is executed.
+20:45:23 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:23 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+20:45:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+20:45:23 INFO  : Context for processor 'microblaze_0' is selected.
+20:45:23 INFO  : 'con' command is executed.
+20:45:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+20:45:23 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+20:48:29 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:48:33 INFO  : Disconnected from the channel tcfchan#3.
+20:48:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:48:35 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+20:48:35 INFO  : 'jtag frequency' command is executed.
+20:48:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+20:48:35 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+20:48:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:35 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:48:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:48:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:35 INFO  : System reset is completed.
+20:48:38 INFO  : 'after 3000' command is executed.
+20:48:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:38 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+20:48:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+20:48:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:39 INFO  : 'con' command is executed.
+20:48:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+20:48:39 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+20:49:23 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:49:26 INFO  : Disconnected from the channel tcfchan#4.
+20:49:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:49:27 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+20:49:27 INFO  : 'jtag frequency' command is executed.
+20:49:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+20:49:28 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+20:49:28 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:28 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:49:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:49:28 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:28 INFO  : System reset is completed.
+20:49:31 INFO  : 'after 3000' command is executed.
+20:49:31 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:31 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+20:49:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+20:49:31 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:31 INFO  : 'con' command is executed.
+20:49:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+20:49:31 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+20:50:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:50:28 INFO  : Disconnected from the channel tcfchan#5.
+20:50:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:50:30 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+20:50:30 INFO  : 'jtag frequency' command is executed.
+20:50:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+20:50:30 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+20:50:30 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:30 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:50:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:50:30 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:30 INFO  : System reset is completed.
+20:50:33 INFO  : 'after 3000' command is executed.
+20:50:33 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:33 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+20:50:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+20:50:34 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:34 INFO  : 'con' command is executed.
+20:50:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+20:50:34 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+20:50:41 INFO  : Disconnected from the channel tcfchan#6.
+20:50:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:50:42 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+20:50:42 INFO  : 'jtag frequency' command is executed.
+20:50:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+20:50:43 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+20:50:43 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:43 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:50:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:50:43 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:43 INFO  : System reset is completed.
+20:50:46 INFO  : 'after 3000' command is executed.
+20:50:46 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:46 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+20:50:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+20:50:46 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:46 INFO  : 'con' command is executed.
+20:50:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+20:50:46 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+20:52:04 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+20:52:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:15 INFO  : Disconnected from the channel tcfchan#7.
+20:52:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:16 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+20:52:16 INFO  : 'jtag frequency' command is executed.
+20:52:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+20:52:17 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+20:52:17 INFO  : Context for processor 'microblaze_0' is selected.
+20:52:17 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:52:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:52:17 INFO  : Context for processor 'microblaze_0' is selected.
+20:52:17 INFO  : System reset is completed.
+20:52:20 INFO  : 'after 3000' command is executed.
+20:52:20 INFO  : Context for processor 'microblaze_0' is selected.
+20:52:20 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+20:52:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+20:52:20 INFO  : Context for processor 'microblaze_0' is selected.
+20:52:20 INFO  : 'con' command is executed.
+20:52:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+20:52:20 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:02:36 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:02:41 INFO  : Disconnected from the channel tcfchan#8.
+21:02:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:42 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:02:42 INFO  : 'jtag frequency' command is executed.
+21:02:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:02:43 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:02:43 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:43 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:02:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:02:43 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:43 INFO  : System reset is completed.
+21:02:46 INFO  : 'after 3000' command is executed.
+21:02:46 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:46 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:02:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:02:46 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:46 INFO  : 'con' command is executed.
+21:02:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:02:46 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:03:48 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:03:55 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:03:58 INFO  : Disconnected from the channel tcfchan#9.
+21:03:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:59 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:03:59 INFO  : 'jtag frequency' command is executed.
+21:03:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:04:00 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:04:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:04:00 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:04:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:04:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:04:00 INFO  : System reset is completed.
+21:04:03 INFO  : 'after 3000' command is executed.
+21:04:03 INFO  : Context for processor 'microblaze_0' is selected.
+21:04:03 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:04:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:04:03 INFO  : Context for processor 'microblaze_0' is selected.
+21:04:03 INFO  : 'con' command is executed.
+21:04:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:04:03 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:06:43 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:06:47 INFO  : Disconnected from the channel tcfchan#10.
+21:06:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:06:48 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:06:48 INFO  : 'jtag frequency' command is executed.
+21:06:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:06:49 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:06:49 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:49 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:06:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:06:49 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:49 INFO  : System reset is completed.
+21:06:52 INFO  : 'after 3000' command is executed.
+21:06:52 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:52 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:06:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:06:52 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:52 INFO  : 'con' command is executed.
+21:06:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:06:52 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:09:05 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:09:08 INFO  : Disconnected from the channel tcfchan#11.
+21:09:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:09:09 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:09:09 INFO  : 'jtag frequency' command is executed.
+21:09:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:09:10 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:09:10 INFO  : Context for processor 'microblaze_0' is selected.
+21:09:10 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:09:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:09:10 INFO  : Context for processor 'microblaze_0' is selected.
+21:09:10 INFO  : System reset is completed.
+21:09:13 INFO  : 'after 3000' command is executed.
+21:09:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:09:13 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:09:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:09:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:09:13 INFO  : 'con' command is executed.
+21:09:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:09:13 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:10:44 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:10:48 INFO  : Disconnected from the channel tcfchan#12.
+21:10:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:10:49 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:10:49 INFO  : 'jtag frequency' command is executed.
+21:10:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:10:50 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:10:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:10:50 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:10:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:10:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:10:50 INFO  : System reset is completed.
+21:10:53 INFO  : 'after 3000' command is executed.
+21:10:53 INFO  : Context for processor 'microblaze_0' is selected.
+21:10:53 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:10:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:10:53 INFO  : Context for processor 'microblaze_0' is selected.
+21:10:53 INFO  : 'con' command is executed.
+21:10:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:10:53 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:11:14 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:11:20 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:11:28 INFO  : Disconnected from the channel tcfchan#13.
+21:11:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:11:29 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:11:29 INFO  : 'jtag frequency' command is executed.
+21:11:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:11:30 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:11:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:30 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:11:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:11:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:30 INFO  : System reset is completed.
+21:11:33 INFO  : 'after 3000' command is executed.
+21:11:33 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:33 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:11:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:11:33 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:33 INFO  : 'con' command is executed.
+21:11:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:11:33 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:14:13 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:14:26 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:14:29 INFO  : Disconnected from the channel tcfchan#14.
+21:14:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:30 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:14:30 INFO  : 'jtag frequency' command is executed.
+21:14:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:14:31 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:14:31 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:31 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:14:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:14:31 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:31 INFO  : System reset is completed.
+21:14:34 INFO  : 'after 3000' command is executed.
+21:14:34 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:34 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:14:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:14:34 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:34 INFO  : 'con' command is executed.
+21:14:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:14:34 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:15:20 INFO  : Disconnected from the channel tcfchan#15.
+21:15:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:15:21 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:15:21 INFO  : 'jtag frequency' command is executed.
+21:15:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:15:22 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:15:22 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:22 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:15:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:15:22 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:22 INFO  : System reset is completed.
+21:15:25 INFO  : 'after 3000' command is executed.
+21:15:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:25 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:15:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:15:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:25 INFO  : 'con' command is executed.
+21:15:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:15:25 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:17:33 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:17:45 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:20:16 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:21:13 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:21:28 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:21:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:22:13 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:22:31 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:24:03 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:24:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:24:14 INFO  : Disconnected from the channel tcfchan#16.
+21:24:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:24:15 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:24:15 INFO  : 'jtag frequency' command is executed.
+21:24:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:24:15 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:24:15 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:15 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:24:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:24:15 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:15 INFO  : System reset is completed.
+21:24:18 INFO  : 'after 3000' command is executed.
+21:24:18 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:19 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:24:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:24:19 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:19 INFO  : 'con' command is executed.
+21:24:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:24:19 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:24:22 INFO  : Disconnected from the channel tcfchan#17.
+21:24:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:24:23 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:24:23 INFO  : 'jtag frequency' command is executed.
+21:24:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:24:24 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:24:24 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:24 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:24:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:24:24 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:24 INFO  : System reset is completed.
+21:24:27 INFO  : 'after 3000' command is executed.
+21:24:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:27 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:24:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:24:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:27 INFO  : 'con' command is executed.
+21:24:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:24:27 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:24:51 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:24:55 INFO  : Disconnected from the channel tcfchan#18.
+21:24:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:24:56 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:24:56 INFO  : 'jtag frequency' command is executed.
+21:24:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:24:57 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:24:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:57 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:24:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:24:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:24:57 INFO  : System reset is completed.
+21:25:00 INFO  : 'after 3000' command is executed.
+21:25:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:25:00 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:25:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:25:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:25:00 INFO  : 'con' command is executed.
+21:25:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:25:00 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:25:33 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:25:39 INFO  : Disconnected from the channel tcfchan#19.
+21:25:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:25:40 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:25:40 INFO  : 'jtag frequency' command is executed.
+21:25:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:25:41 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:25:41 INFO  : Context for processor 'microblaze_0' is selected.
+21:25:41 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:25:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:25:41 INFO  : Context for processor 'microblaze_0' is selected.
+21:25:41 INFO  : System reset is completed.
+21:25:44 INFO  : 'after 3000' command is executed.
+21:25:44 INFO  : Context for processor 'microblaze_0' is selected.
+21:25:44 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:25:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:25:44 INFO  : Context for processor 'microblaze_0' is selected.
+21:25:44 INFO  : 'con' command is executed.
+21:25:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:25:44 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:27:24 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:27:27 INFO  : Disconnected from the channel tcfchan#20.
+21:27:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:27:28 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:27:28 INFO  : 'jtag frequency' command is executed.
+21:27:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:27:29 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:27:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:27:29 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:27:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:27:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:27:29 INFO  : System reset is completed.
+21:27:32 INFO  : 'after 3000' command is executed.
+21:27:32 INFO  : Context for processor 'microblaze_0' is selected.
+21:27:32 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:27:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:27:32 INFO  : Context for processor 'microblaze_0' is selected.
+21:27:32 INFO  : 'con' command is executed.
+21:27:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:27:32 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:32:46 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:32:49 INFO  : Disconnected from the channel tcfchan#21.
+21:32:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:32:50 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:32:50 INFO  : 'jtag frequency' command is executed.
+21:32:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:32:51 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:32:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:32:51 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:32:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:32:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:32:51 INFO  : System reset is completed.
+21:32:54 INFO  : 'after 3000' command is executed.
+21:32:54 INFO  : Context for processor 'microblaze_0' is selected.
+21:32:54 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:32:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:32:54 INFO  : Context for processor 'microblaze_0' is selected.
+21:32:55 INFO  : 'con' command is executed.
+21:32:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:32:55 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:45:19 INFO  : Checking for BSP changes to sync application flags for project 'SPI'...
+21:45:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:45:33 INFO  : Disconnected from the channel tcfchan#22.
+21:45:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:45:34 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:45:34 INFO  : 'jtag frequency' command is executed.
+21:45:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:45:34 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:45:35 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:35 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:45:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:45:35 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:35 INFO  : System reset is completed.
+21:45:38 INFO  : 'after 3000' command is executed.
+21:45:38 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:38 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:45:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:45:38 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:38 INFO  : 'con' command is executed.
+21:45:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:45:38 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:45:40 INFO  : Disconnected from the channel tcfchan#23.
+21:45:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:45:41 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:45:41 INFO  : 'jtag frequency' command is executed.
+21:45:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:45:42 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:45:42 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:42 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:45:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:45:42 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:42 INFO  : System reset is completed.
+21:45:45 INFO  : 'after 3000' command is executed.
+21:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:45 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:45:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:45:46 INFO  : 'con' command is executed.
+21:45:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:45:46 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+21:48:03 INFO  : Disconnected from the channel tcfchan#24.
+21:48:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:04 INFO  : Jtag cable 'Digilent Basys3 210183BE0E33A' is selected.
+21:48:04 INFO  : 'jtag frequency' command is executed.
+21:48:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}' command is executed.
+21:48:04 INFO  : Device configured successfully with "D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit"
+21:48:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:04 INFO  : Hardware design and registers information is loaded from 'D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:48:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:48:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:04 INFO  : System reset is completed.
+21:48:07 INFO  : 'after 3000' command is executed.
+21:48:07 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:07 INFO  : The application 'D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf' is downloaded to processor 'microblaze_0'.
+21:48:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+fpga -file D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+loadhw -hw D:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+dow D:/JJM/260504_MicroBlaze_SPI/workspace/SPI/Debug/SPI.elf
+----------------End of Script----------------
+
+21:48:08 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:08 INFO  : 'con' command is executed.
+21:48:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183BE0E33A" && jtag_device_ctx=="jsn-Basys3-210183BE0E33A-0362d093-0"}
+con
+----------------End of Script----------------
+
+21:48:08 INFO  : Launch script is exported to file 'D:\JJM\260504_MicroBlaze_SPI\workspace\SPI_system\_ide\scripts\debugger_spi-default.tcl'
+00:59:26 INFO  : Disconnected from the channel tcfchan#25.
+11:54:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\JJM\260504_MicroBlaze_SPI\workspace\temp_xsdb_launch_script.tcl
+11:54:51 INFO  : XSCT server has started successfully.
+11:54:51 INFO  : plnx-install-location is set to ''
+11:54:51 INFO  : Successfully done setting XSCT server connection channel  
+11:54:51 INFO  : Successfully done setting workspace for the tool. 
+11:54:54 INFO  : Platform repository initialization has completed.
+11:54:54 INFO  : Successfully done query RDI_DATADIR 
+11:54:54 INFO  : Registering command handlers for Vitis TCF services
+10:07:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\JJM\260504_MicroBlaze_SPI\workspace\temp_xsdb_launch_script.tcl
+10:07:11 INFO  : XSCT server has started successfully.
+10:07:11 INFO  : Successfully done setting XSCT server connection channel  
+10:07:11 INFO  : plnx-install-location is set to ''
+10:07:11 INFO  : Successfully done setting workspace for the tool. 
+10:07:14 INFO  : Platform repository initialization has completed.
+10:07:14 INFO  : Successfully done query RDI_DATADIR 
+10:07:14 INFO  : Registering command handlers for Vitis TCF services
+17:38:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\JJM\260504_MicroBlaze_SPI\workspace\temp_xsdb_launch_script.tcl
+17:38:07 INFO  : XSCT server has started successfully.
+17:38:07 INFO  : plnx-install-location is set to ''
+17:38:07 INFO  : Successfully done setting XSCT server connection channel  
+17:38:07 INFO  : Successfully done setting workspace for the tool. 
+17:38:10 INFO  : Platform repository initialization has completed.
+17:38:11 INFO  : Registering command handlers for Vitis TCF services
+17:38:16 INFO  : Successfully done query RDI_DATADIR 

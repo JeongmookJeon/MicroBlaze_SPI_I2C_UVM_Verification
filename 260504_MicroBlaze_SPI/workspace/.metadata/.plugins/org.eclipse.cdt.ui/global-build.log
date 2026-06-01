@@ -1,0 +1,79 @@
+Nothing to build in platform 'design_1_wrapper'
+
+21:45:19 **** Clean-only build of configuration Debug for project SPI ****
+make clean 
+rm -rf  ./src/driver/LED/LED.o  ./src/driver/FND/FND.o  ./src/driver/Button/Button.o  ./src/common/common.o  ./src/ap/UPCounter/UPCounter.o  ./src/ap/TimeClock/Clock.o  ./src/ap/ap_main.o ./src/ap/interrupt.o  ./src/HAL/TMR/TMR.o  ./src/HAL/SPI/SPI.o  ./src/HAL/GPIO/GPIO.o  ./src/main.o  ./src/driver/LED/LED.d  ./src/driver/FND/FND.d  ./src/driver/Button/Button.d  ./src/common/common.d  ./src/ap/UPCounter/UPCounter.d  ./src/ap/TimeClock/Clock.d  ./src/ap/ap_main.d ./src/ap/interrupt.d  ./src/HAL/TMR/TMR.d  ./src/HAL/SPI/SPI.d  ./src/HAL/GPIO/GPIO.d  ./src/main.d  SPI.elf.size  SPI.elf
+' '
+21:45:20 **** Incremental Build of configuration Debug for project SPI ****
+make all 
+'Building file: ../src/driver/SW/SW.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/driver/SW/SW.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/driver/SW/SW.d" -MT"src/driver/SW/SW.o" -o "src/driver/SW/SW.o" "../src/driver/SW/SW.c"
+'Finished building: ../src/driver/SW/SW.c'
+' '
+'Building file: ../src/driver/SPI_D/SPI_D.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/driver/SPI_D/SPI_D.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/driver/SPI_D/SPI_D.d" -MT"src/driver/SPI_D/SPI_D.o" -o "src/driver/SPI_D/SPI_D.o" "../src/driver/SPI_D/SPI_D.c"
+'Finished building: ../src/driver/SPI_D/SPI_D.c'
+' '
+'Building file: ../src/driver/LED/LED.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/driver/LED/LED.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/driver/LED/LED.d" -MT"src/driver/LED/LED.o" -o "src/driver/LED/LED.o" "../src/driver/LED/LED.c"
+'Finished building: ../src/driver/LED/LED.c'
+' '
+'Building file: ../src/driver/FND/FND.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/driver/FND/FND.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/driver/FND/FND.d" -MT"src/driver/FND/FND.o" -o "src/driver/FND/FND.o" "../src/driver/FND/FND.c"
+'Finished building: ../src/driver/FND/FND.c'
+' '
+'Building file: ../src/driver/Button/Button.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/driver/Button/Button.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/driver/Button/Button.d" -MT"src/driver/Button/Button.o" -o "src/driver/Button/Button.o" "../src/driver/Button/Button.c"
+'Finished building: ../src/driver/Button/Button.c'
+' '
+'Building file: ../src/common/common.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/common/common.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/common/common.d" -MT"src/common/common.o" -o "src/common/common.o" "../src/common/common.c"
+'Finished building: ../src/common/common.c'
+' '
+'Building file: ../src/ap/ap_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ap/ap_main.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ap/ap_main.d" -MT"src/ap/ap_main.o" -o "src/ap/ap_main.o" "../src/ap/ap_main.c"
+'Finished building: ../src/ap/ap_main.c'
+' '
+'Building file: ../src/ap/interrupt.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ap/interrupt.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ap/interrupt.d" -MT"src/ap/interrupt.o" -o "src/ap/interrupt.o" "../src/ap/interrupt.c"
+'Finished building: ../src/ap/interrupt.c'
+' '
+'Building file: ../src/HAL/TMR/TMR.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HAL/TMR/TMR.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HAL/TMR/TMR.d" -MT"src/HAL/TMR/TMR.o" -o "src/HAL/TMR/TMR.o" "../src/HAL/TMR/TMR.c"
+'Finished building: ../src/HAL/TMR/TMR.c'
+' '
+'Building file: ../src/HAL/SPI/SPI.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HAL/SPI/SPI.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HAL/SPI/SPI.d" -MT"src/HAL/SPI/SPI.o" -o "src/HAL/SPI/SPI.o" "../src/HAL/SPI/SPI.c"
+'Finished building: ../src/HAL/SPI/SPI.c'
+' '
+'Building file: ../src/HAL/GPIO/GPIO.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/HAL/GPIO/GPIO.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/HAL/GPIO/GPIO.d" -MT"src/HAL/GPIO/GPIO.o" -o "src/HAL/GPIO/GPIO.o" "../src/HAL/GPIO/GPIO.c"
+'Finished building: ../src/HAL/GPIO/GPIO.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SPI.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/JJM/260504_MicroBlaze_SPI/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI.elf"  ./src/driver/SW/SW.o  ./src/driver/SPI_D/SPI_D.o  ./src/driver/LED/LED.o  ./src/driver/FND/FND.o  ./src/driver/Button/Button.o  ./src/common/common.o  ./src/ap/ap_main.o ./src/ap/interrupt.o  ./src/HAL/TMR/TMR.o  ./src/HAL/SPI/SPI.o  ./src/HAL/GPIO/GPIO.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI.elf  |tee "SPI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10612	    336	   3284	  14232	   3798	SPI.elf
+'Finished building: SPI.elf.size'
+' '

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May  4 21:01:38 2026
+# Process ID: 66076
+# Current directory: D:/JJM/260504_SPI_slave/260504_SPI_slave.runs/impl_1
+# Command line: vivado.exe -log slave_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source slave_top.tcl -notrace
+# Log file: D:/JJM/260504_SPI_slave/260504_SPI_slave.runs/impl_1/slave_top.vdi
+# Journal file: D:/JJM/260504_SPI_slave/260504_SPI_slave.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source slave_top.tcl -notrace

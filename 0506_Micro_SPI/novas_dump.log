@@ -1,0 +1,490 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_dump_var_vpdg('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_dump_var_vpdg')
+ANF: vcsd_begin_no_value_var_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vhdi_dt_get_type('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_dt_get_vhdl_integer_range_info('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_dt_get_vhdl_integer_range_info')
+ANF: vhdi_def_traverse_module('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_set_int_subtype('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_set_int_subtype')
+ANF: vhdi_set_fixed_point('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_set_fixed_point')
+ANF: vhdi_get_fsdb_option('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: /home/hedu24/MOOK_WORK/0506_Micro_SPI/simv
+ option[1]: -sml=verdi
+ option[2]: +fsdb+gate=off
+ option[3]: -ucli2Proc
+ option[4]: -ucli
+ option[5]: -l
+ option[6]: /home/hedu24/MOOK_WORK/0506_Micro_SPI/verdiLog/sim.log
+ option[7]: /tools/synopsys/vcs/W-2024.09-SP1/linux64/bin/vcs1
+ option[8]: -Mcc=gcc
+ option[9]: -Mcplusplus=g++
+ option[10]: -Masflags=
+ option[11]: -Mcfl= -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/tools/synopsys/vcs/W-2024.09-SP1/include 
+ option[12]: -Mxllcflags=
+ option[13]: -Mxcflags= -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -I/tools/synopsys/vcs/W-2024.09-SP1/include
+ option[14]: -Mldflags= -rdynamic 
+ option[15]: -Mout=simv
+ option[16]: -Mamsrun=
+ option[17]: -Mvcsaceobjs=
+ option[18]: -Mobjects= /tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/libvirsim.so /tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/liberrorinf.so /tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/libsnpsmalloc.so /tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/libvfs.so 
+ option[19]: -Mexternalobj=
+ option[20]: -Msaverestoreobj=/tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/vcs_save_restore_new.o
+ option[21]: -Mcrt0=
+ option[22]: -Mcrtn=
+ option[23]: -Mcsrc=/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/dpi/uvm_dpi.cc /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/dpi/uvm_verdi_dpi.cpp 
+ option[24]: -Msyslibs=/tools/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[25]: +define+UVM_VERDI_VIF_RECORD
+ option[26]: +define+UVM_VCS_RECORD
+ option[27]: +incdir+/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs
+ option[28]: /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/uvm_pkg.sv
+ option[29]: /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv
+ option[30]: +incdir+/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi
+ option[31]: /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv
+ option[32]: -full64
+ option[33]: -ntb_opts
+ option[34]: uvm-1.2
+ option[35]: +incdir+/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/
+ option[36]: -timescale=1ns/1ps
+ option[37]: -debug_access+a
+ option[38]: +vpi
+ option[39]: +vcsd1
+ option[40]: +itf+/tools/synopsys/vcs/W-2024.09-SP1/linux64/lib/vcsdp_lite.tab
+ option[41]: -kdb
+ option[42]: -Xufe=2steps
+ option[43]: -kdb=common_elab
+ option[44]: -Xufe=2steps
+ option[45]: -lca
+ option[46]: -cm
+ option[47]: line+cond+fsm+tgl+branch+assert
+ option[48]: -o
+ option[49]: simv
+ option[50]: -kdb=common_elab
+ option[51]: -Xufe=2steps
+ option[52]: -kdb=common_elab
+ option[53]: -Xufe=2steps
+ option[54]: -picarchive
+ option[55]: -P
+ option[56]: /tools/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+ option[57]: -fsdb
+ option[58]: -sverilog
+ option[59]: -gen_obj
+ option[60]: +incdir+tb
+ option[61]: -Xfile_begin_f=filelist.f
+ option[62]: ./rtl/spi_master.v
+ option[63]: ./rtl/spi_slave.v
+ option[64]: ./tb/tb_spi.sv
+ option[65]: -Xfile_end
+ option[66]: -load
+ option[67]: /tools/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[68]: timescale=1ns/1ps
+Chronologic Simulation VCS Release W-2024.09-SP1_Full64
+Linux 5.14.0-427.13.1.el9_4.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Apr 10 10:29:16 EDT 2024 x86_64
+CPU cores: 64
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8309 kbytes
+coredumpsize		unlimited
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		524288
+memorylocked		8192 kbytes
+maxproc		4126067
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+LC_HOME=/tools/synopsys/lc/V-2023.12-SP5-5
+SHELL=/bin/csh
+PRIMESIM_HOME=/tools/synopsys/primesim/W-2024.09-SP2-2
+GROUP=hedu24
+MACHTYPE=x86_64
+HOSTNAME=kccisynop2
+VCS_HOME=/tools/synopsys/vcs/W-2024.09-SP1
+MAKE_TERMOUT=/dev/pts/26
+SPS_RGB_PATH=/tools/synopsys/verdi/W-2024.09-SP2/etc/rgb
+MALLOC_ARENA_MAX=1
+CUSTOM_COMPILER=/tools/synopsys/customcompiler/W-2024.09-SP2-3
+XMODIFIERS=@im=none
+VERDI_HOME=/tools/synopsys/verdi/W-2024.09-SP2
+PT_HOME=/tools/synopsys/prime/W-2024.09-SP4
+VERDI_QT5=1
+PWD=/home/hedu24/MOOK_WORK/0506_Micro_SPI
+LOGNAME=hedu24
+XDG_SESSION_TYPE=tty
+MODULESHOME=/usr/share/Modules
+MANPATH=/usr/share/man:
+SPS_FONT_PATH=/tools/synopsys/verdi/W-2024.09-SP2/font
+HSP_HOME=/tools/synopsys/hspice/W-2024.09-SP2-2/hspice
+SCL_HOME=/tools/synopsys/scl/2023.09
+MOTD_SHOWN=pam
+XNLSPATH=/tools/synopsys/verdi/W-2024.09-SP2/etc/access/nls
+__MODULES_SHARE_MANPATH=:1
+HOME=/home/hedu24
+LD_NOVERSION=1
+LANG=C
+WV_HOME=/tools/synopsys/wv/W-2024.09-SP2-4
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
+OSTYPE=linux
+VERDI_ORIGNAL_LD_LIBRARY_PATH=
+SSH_CONNECTION=10.10.15.128 50060 10.10.15.20 22
+MFLAGS=
+SPS_XFONT_PATH=/tools/synopsys/verdi/W-2024.09-SP2/XFont
+NOVASHLPPATH=/tools/synopsys/verdi/W-2024.09-SP2/doc
+ICV_HOME_DIR=/tools/synopsys/icvalidator/W-2024.09-SP2-6
+MAKEFLAGS=
+XDG_SESSION_CLASS=user
+SNPSLMD_LICENSE_FILE=27020@10.10.15.20:27020@61.32.218.18
+TERM=xterm
+HOST=kccisynop2
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+USER=hedu24
+MAKE_TERMERR=/dev/pts/26
+LOADEDMODULES=
+DISPLAY=localhost:21.0
+STARRC_HOME=/tools/synopsys/starrc/V-2023.12-SP5-2
+FM_HOME=/tools/synopsys/fm/W-2024.09-SP4
+SHLVL=1
+MAKELEVEL=1
+NOVAS_SYNC_MOTIF_DISP=
+QT_VERDI_ENABLE_ICON_MEM_FIX=1
+XDG_SESSION_ID=3962
+LM_LICENSE_FILE=27020@10.10.15.20:27020@61.32.218.18
+SAED32_28_PDK=/home/PDK2/SAED32nm_PDK_02_2024
+LD_LIBRARY_PATH=
+XDG_RUNTIME_DIR=/run/user/1137
+S_COLORS=auto
+SSH_CLIENT=10.10.15.128 50060 22
+PRIMEWAVE=/tools/synopsys/primewave/W-2024.09-SP2-3
+__MODULES_LMINIT=module use --append /usr/share/Modules/modulefiles:module use --append /etc/modulefiles:module use --append /usr/share/modulefiles
+ICC2_HOME=/tools/synopsys/icc2/W-2024.09-SP1
+DEBUGINFOD_IMA_CERT_PATH=/etc/keys/ima:
+VC_STATIC_HOME=/tools/synopsys/vc_static/W-2024.09-2
+SYS_PROG_NAME=verdi
+LC_ALL=C
+VENDOR=unknown
+PATH=/tools/synopsys/icc2/W-2024.09-SP1/bin:/tools/synopsys/prime/W-2024.09-SP4/bin:/tools/synopsys/lc/V-2023.12-SP5-5/bin:/tools/synopsys/syn/V-2023.12-SP5-4/bin:/tools/synopsys/fm/W-2024.09-SP4/bin:/tools/synopsys/vcs/W-2024.09-SP1/bin:/tools/synopsys/verdi/W-2024.09-SP2/bin:/tools/synopsys/vc_static/W-2024.09-2/bin:/tools/synopsys/starrc/V-2023.12-SP5-2/bin:/tools/synopsys/customcompiler/W-2024.09-SP2-3/bin:/tools/synopsys/wv/W-2024.09-SP2-4/bin:/tools/synopsys/primewave/W-2024.09-SP2-3/bin:/tools/synopsys/primesim/W-2024.09-SP2-2/bin:/tools/synopsys/starrc/V-2023.12-SP5-2/bin:/tools/synopsys/hspice/W-2024.09-SP2-2/hspice/linux64:/tools/synopsys/icvalidator/W-2024.09-SP2-6/bin/linux64:/tools/synopsys/scl/2023.09/linux64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+MODULEPATH=/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1137/bus
+MAIL=/var/spool/mail/hedu24
+SSH_TTY=/dev/pts/26
+HOSTTYPE=x86_64-linux
+QT_PLUGIN_PATH=/tools/synopsys/verdi/W-2024.09-SP2/platform/LINUXAMD64/lib/Qt5/plugins
+SYS_INST_DIR=/tools/synopsys/verdi/W-2024.09-SP2
+SYN_HOME=/tools/synopsys/syn/V-2023.12-SP5-4
+REMOTEHOST=10.10.15.128
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+NOVAS_LC_ALL=C
+SIMV_DAIDIR_PATH=/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv.daidir
+NOVAS_SIGNAL_BASE_EXTRACTION=1
+SIGNAL_BASE_EXTRACTION=1
+NOVAS_VERDI_SVTB_BETA=1
+VERDI_SVTB_BETA=1
+NOVAS_VERDI_SVTB_ALPHA=1
+VERDI_SVTB_ALPHA=1
+NOVAS_VERDI_TB_HT=1
+VERDI_TB_HT=1
+NOVAS_WAVE_REDRAW_ALLVC=1
+WAVE_REDRAW_ALLVC=1
+NOVAS_TCL_LIBRARY=/tools/synopsys/verdi/W-2024.09-SP2/etc/access/tcl86_library
+TCL_LIBRARY=/tools/synopsys/verdi/W-2024.09-SP2/etc/access/tcl86_library
+XKEYSYMDB=/tools/synopsys/verdi/W-2024.09-SP2/etc/access/XKeysymDB2.1
+QTWEBENGINE_CHROMIUM_FLAGS=--log-level=3
+QT_XCB_NO_XI2=1
+NOVAS_SIGNAL_BASED_BA=0
+SIGNAL_BASED_BA=0
+SYNOPSYS_SIM=/tools/synopsys/vcs/W-2024.09-SP1
+DISABLE_LIBRARY_MAP_CHECK=1
+AST_DUMP=11
+TRMIS_REVERSE_JUMP_TO_EARLIEST=1
+TS_TRMIS_DECIDE_RM_RC_ATTR=0
+TFV_FSDB_MIS_BATCH_REMOVE_INTF_RC_HAVING_INTF_MISMATCH=0
+TFV_FSDB_MIS_BATCH_ENABLE_FSDB_GATE=1
+TFV_FSDB_MIS_BATCH_DUMP_TDC=0
+TFV_FSDB_MIS_RCA_MODE=1
+SNPS_SIM_DEFAULT_GUI=verdi
+FSDB_FILE=/home/hedu24/MOOK_WORK/0506_Micro_SPI/inter.fsdb
+VCS_UCLI_STDIN_BLOCKING=1
+FSDB_VHDL_PROTECTED=1
+FSDB_RD_IR_ENABLE=1
+FSDB_SVA_STATUS=1
+XLOCALEDIR=/tools/synopsys/verdi/W-2024.09-SP2/etc/access/locale
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_STACK_EXEC=true
+VCS_EXEC_DONE=1
+VCS_STOP_SAFE=1
+DVE_SIM_SELECT_LOOP=on
+FLEXLM_BORROWFILE=/home/hedu24/.kccisynop2-borrow.txt
+Runtime command line arguments:
+argv[0]=/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv
+argv[1]=-sml=verdi
+argv[2]=+fsdb+gate=off
+argv[3]=-ucli2Proc
+argv[4]=-ucli
+argv[5]=-l
+argv[6]=/home/hedu24/MOOK_WORK/0506_Micro_SPI/verdiLog/sim.log
+305 profile - 100
+          CPU/Mem usage: 0.010 sys,  0.040 user,  350.27M mem
+306 Elapsed time:    0:00:00    Thu May  7 20:57:01 2026
+307 User CPU time used: 0 seconds
+308 System CPU time used: 0 seconds
+309 pliAppInit
+310 ndpGetenv(FSDB_FILE): /home/hedu24/MOOK_WORK/0506_Micro_SPI/inter.fsdb
+311 ndpGetenv(FSDB_SVA_STATUS): 1
+312 ndpGetenv(FSDB_VHDL_PROTECTED): 1
+313 FSDB_GATE & FSDB_RTL is disabled.
+314 FSDB_DYNAMIC_ALIAS is enabled.
+315 libnuma.so open fail. libnuma.so: cannot open shared object file: No such file or directory
+316 FSDB NUMA optimize not available.
+317 FSDB_PACKED_MODE is enabled.
+318 FSDB_GATE_PACKED is enabled.
+319 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+320 FSDB_REDUCE_VC_MEM is enabled.
+321 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+322 Enable Parallel Dumping.
+323 pliAppMiscSet: New Sim Round
+324 pliEntryInit
+325 LIBSSCORE=found /tools/synopsys/verdi/W-2024.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202409.so through $NOVAS_HOME setting.
+326 FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+327 (C) 1996 - 2025 by Synopsys, Inc.
+328 sps_tcl_fsdbDumpfile_main at 0
+329 argv[0]: /home/hedu24/MOOK_WORK/0506_Micro_SPI/inter.fsdb
+330 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+331 *Verdi* : Create FSDB file '/home/hedu24/MOOK_WORK/0506_Micro_SPI/inter.fsdb'
+332 [spi_vcs_vd_ppi_create_root]: no upf option
+333 DUMPER_MEMORY_REDUCTION is enabled.
+334 compile option from '/home/hedu24/MOOK_WORK/0506_Micro_SPI/simv.daidir/vcs_rebuild'.
+335   "vcs '-full64' '-sverilog' '-ntb_opts' 'uvm-1.2' '-timescale=1ns/1ps' '-debug_access+a' '-kdb' '-lca' '-cm' 'line+cond+fsm+tgl+branch+assert' '+incdir+tb' '-f' 'filelist.f' '-o' 'simv' 2>&1"
+336 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+337 *Verdi* : Flush all FSDB Files at 0 ps.
+338 DVDI_is_vir_unload_enabled is enable
+339 FSDB_VCS_ENABLE_NATIVE_VC is enable
+340 FSDB_VCS_ENABLE_MEMORY_NATIVE_VC is enabled
+341 spi_vcs_vd_vlog_vc_enable_vector_strength is skipped since VCS is not support.
+342 sps_tcl_fsdbDumpvars_vd_main
+343 argv[0]: 1
+344 argv[1]: tb_axi_spi_uvm.vif
+345 argv[2]: +all
+346 argv[3]: +trace_process
+347 *Verdi* : Begin traversing the scope (tb_axi_spi_uvm.vif), layer (1).
+348 *Verdi* : Enable +trace_process and +all dumping.
+349 *Verdi* : End of traversing.
+350 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.010 sys,  0.040 user,  445.91M mem
+                   incr: 0.000 sys,  0.000 user,  4.28M mem
+                   accu: 0.000 sys,  0.000 user,  4.28M mem
+              accu incr: 0.000 sys,  0.000 user,  4.28M mem
+
+          Count usage: 24 var,  24 idcode,  24 callback
+                 incr: 24 var,  24 idcode,  24 callback
+                 accu: 24 var,  24 idcode,  24 callback
+            accu incr: 24 var,  24 idcode,  24 callback
+351 Idcode  0 - bc1:0  mda:0
+352 Elapsed time:    0:00:00    Thu May  7 20:57:01 2026
+353 User CPU time used: 0 seconds
+354 System CPU time used: 0 seconds
+355 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.010 sys,  0.040 user,  445.91M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  4.28M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 24 var,  24 idcode,  24 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 24 var,  24 idcode,  24 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+356 Idcode  0 - bc1:0  mda:0
+357 Elapsed time:    0:00:00    Thu May  7 20:57:01 2026
+358 User CPU time used: 0 seconds
+359 System CPU time used: 0 seconds
+360 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+361 *Verdi* : Flush all FSDB Files at 0 ps.
+362 sps_tcl_fsdbDumpvars_vd_main
+363 argv[0]: 1
+364 argv[1]: tb_axi_spi_uvm.DUT_AXI_SPI_MASTER.U_SPU_MASTER
+365 argv[2]: +all
+366 argv[3]: +trace_process
+367 *Verdi* : Begin traversing the scope (tb_axi_spi_uvm.DUT_AXI_SPI_MASTER.U_SPU_MASTER), layer (1).
+368 *Verdi* : Enable +trace_process and +all dumping.
+369 *Verdi* : End of traversing.
+370 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.040 user,  447.66M mem
+                   incr: 0.010 sys,  0.000 user,  0.00M mem
+                   accu: 0.010 sys,  0.000 user,  0.00M mem
+              accu incr: 0.010 sys,  0.000 user,  0.00M mem
+
+          Count usage: 46 var,  46 idcode,  46 callback
+                 incr: 22 var,  22 idcode,  22 callback
+                 accu: 22 var,  22 idcode,  22 callback
+            accu incr: 22 var,  22 idcode,  22 callback
+371 Idcode  0 - bc1:0  mda:0
+372 Elapsed time:    0:00:00    Thu May  7 20:57:01 2026
+373 User CPU time used: 0 seconds
+374 System CPU time used: 0 seconds
+375 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.040 user,  447.66M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.010 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 46 var,  46 idcode,  46 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 22 var,  22 idcode,  22 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+376 Idcode  0 - bc1:0  mda:0
+377 Elapsed time:    0:00:00    Thu May  7 20:57:01 2026
+378 User CPU time used: 0 seconds
+379 System CPU time used: 0 seconds
+380 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+381 *Verdi* : Flush all FSDB Files at 0 ps.
+382 sps_tcl_fsdbDumpvars_vd_main
+383 argv[0]: 1
+384 argv[1]: tb_axi_spi_uvm.TARGET_SPI_SLAVE
+385 argv[2]: +all
+386 argv[3]: +trace_process
+387 *Verdi* : Begin traversing the scope (tb_axi_spi_uvm.TARGET_SPI_SLAVE), layer (1).
+388 *Verdi* : Enable +trace_process and +all dumping.
+389 *Verdi* : End of traversing.
+390 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.040 user,  447.66M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 70 var,  68 idcode,  68 callback
+                 incr: 24 var,  22 idcode,  22 callback
+                 accu: 24 var,  22 idcode,  22 callback
+            accu incr: 24 var,  22 idcode,  22 callback
+391 Idcode  0 - bc1:0  mda:0
+392 Elapsed time:    0:00:00    Thu May  7 20:57:01 2026
+393 User CPU time used: 0 seconds
+394 System CPU time used: 0 seconds
+395 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.040 user,  447.66M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 70 var,  68 idcode,  68 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 24 var,  22 idcode,  22 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+396 Idcode  0 - bc1:0  mda:0
+397 Elapsed time:    0:00:00    Thu May  7 20:57:01 2026
+398 User CPU time used: 0 seconds
+399 System CPU time used: 0 seconds
+400 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+401 *Verdi* : Flush all FSDB Files at 0 ps.
+402 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+403 *Verdi* : Flush all FSDB Files at 0 ps.
+404 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+405 *Verdi* : Flush all FSDB Files at 0 ps.
+406 sps_tcl_fsdbDumpflush_vd_main at 1010035000 : N/A(0)
+407 *Verdi* : Flush all FSDB Files at 1,010,035,000 ps.
+408 End of simulation at 1010035000
+409 Memory usage: 478.413 M
+410 Maximum resident set size: 208 MB
+411 Hard page faults: 2
+412 Soft page faults: 10598
+413 Elapsed time:    0:25:08    Thu May  7 21:22:09 2026
+414 User CPU time used: 0 seconds
+415 System CPU time used: 0 seconds
+416 Begin FSDB profile info:
+417 FSDB Writer : bc1(793960) bcn(226834) mtf/stf(0/7)
+FSDB Writer elapsed time : flush(0.022141) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+418 End FSDB profile info
+419 FSDB closed. Name: /home/hedu24/MOOK_WORK/0506_Micro_SPI/inter.fsdb Size: 89037
+420 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+421                      - BlockUsed:10 Acquire:0 BufferUsed:15229897
+422                      - Flush:12 Expand:0 ProducerWait:0 ConsumerWait:8
+423                      - MainProducerTime:0.269175101 TotalConsumerTime:0.039952559
+424                      - ElapsedTime:1508.297123000
+425 Producer   0 profile - BlockUsed:10 Acquire:0 BufferUsed:15229897
+426 Consumer   0 profile - Affinity:-1 CPUTime:0.039952559 LifeTime:1503.464824049 (0.00%)
+427                      - BlockUsed:10 Acquire:0 BufferUsed:15229897
+428 SimExit
+429 Elapsed time:    0:25:08    Thu May  7 21:22:09 2026
+430 User CPU time used: 0 seconds
+431 System CPU time used: 0 seconds
+432 Sim process exit

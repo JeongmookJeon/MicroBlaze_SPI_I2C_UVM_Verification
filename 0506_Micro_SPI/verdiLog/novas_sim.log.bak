@@ -1,0 +1,134 @@
+Invoking simulator...
+Verdi>simv -sml=verdi +fsdb+gate=off -ucli2Proc -ucli
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1_Full64; Runtime version W-2024.09-SP1_Full64;  May  6 22:38 2026
+Warning : License for product VCS-BASE-RUNTIME will expire within 17 days, on: 22-may-2026.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file '/home/hedu24/MOOK_WORK/0506_Micro_SPI/inter_1.fsdb'
+*Verdi* : Flush all FSDB Files at 0 ps.
+*Verdi* : Enable RPC Server(799810)
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+  ***********       IMPORTANT RELEASE NOTES         ************
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+Verdi>fsdbDumpvars 1 "tb_axi_spi_uvm.vif"  +all +trace_process;fsdbDumpflush 
+
+*Verdi* : Begin traversing the scope (tb_axi_spi_uvm.vif), layer (1).
+*Verdi* : Enable +trace_process and +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+Verdi>run
+UVM_INFO @ 0: reporter [RNTST] Running test axi_spi_test...
+UVM_INFO ./tb/tb_spi.sv(264) @ 1035000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xb2, RX:0x70 | [Slave] TX:0x70, RX:0xb2
+UVM_INFO ./tb/tb_spi.sv(264) @ 2045000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x33, RX:0x13 | [Slave] TX:0x13, RX:0x33
+UVM_INFO ./tb/tb_spi.sv(264) @ 3055000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x67, RX:0xb0 | [Slave] TX:0xb0, RX:0x67
+UVM_INFO ./tb/tb_spi.sv(264) @ 4065000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x87, RX:0x55 | [Slave] TX:0x55, RX:0x87
+UVM_INFO ./tb/tb_spi.sv(264) @ 5075000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x9e, RX:0x82 | [Slave] TX:0x82, RX:0x9e
+UVM_INFO ./tb/tb_spi.sv(264) @ 6085000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xc8, RX:0xd0 | [Slave] TX:0xd0, RX:0xc8
+UVM_INFO ./tb/tb_spi.sv(264) @ 7095000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x47, RX:0x27 | [Slave] TX:0x27, RX:0x47
+UVM_INFO ./tb/tb_spi.sv(264) @ 8105000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x58, RX:0x15 | [Slave] TX:0x15, RX:0x58
+UVM_INFO ./tb/tb_spi.sv(264) @ 9115000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xd2, RX:0x48 | [Slave] TX:0x48, RX:0xd2
+UVM_INFO ./tb/tb_spi.sv(264) @ 10125000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xb1, RX:0x3 | [Slave] TX:0x3, RX:0xb1
+UVM_INFO ./tb/tb_spi.sv(264) @ 11135000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x91, RX:0x23 | [Slave] TX:0x23, RX:0x91
+UVM_INFO ./tb/tb_spi.sv(264) @ 12145000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x70, RX:0xf5 | [Slave] TX:0xf5, RX:0x70
+UVM_INFO ./tb/tb_spi.sv(264) @ 13155000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x56, RX:0x66 | [Slave] TX:0x66, RX:0x56
+UVM_INFO ./tb/tb_spi.sv(264) @ 14165000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x66, RX:0xaf | [Slave] TX:0xaf, RX:0x66
+UVM_INFO ./tb/tb_spi.sv(264) @ 15175000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xae, RX:0xd7 | [Slave] TX:0xd7, RX:0xae
+UVM_INFO ./tb/tb_spi.sv(264) @ 16185000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x3d, RX:0x4f | [Slave] TX:0x4f, RX:0x3d
+UVM_INFO ./tb/tb_spi.sv(264) @ 17195000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x4c, RX:0xac | [Slave] TX:0xac, RX:0x4c
+UVM_INFO ./tb/tb_spi.sv(264) @ 18205000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xb2, RX:0x4d | [Slave] TX:0x4d, RX:0xb2
+UVM_INFO ./tb/tb_spi.sv(264) @ 19215000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xde, RX:0x3 | [Slave] TX:0x3, RX:0xde
+UVM_INFO ./tb/tb_spi.sv(264) @ 20225000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x35, RX:0x42 | [Slave] TX:0x42, RX:0x35
+UVM_INFO ./tb/tb_spi.sv(264) @ 21235000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x2, RX:0xfe | [Slave] TX:0xfe, RX:0x2
+UVM_INFO ./tb/tb_spi.sv(264) @ 22245000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x50, RX:0xcc | [Slave] TX:0xcc, RX:0x50
+UVM_INFO ./tb/tb_spi.sv(264) @ 23255000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xc9, RX:0xe8 | [Slave] TX:0xe8, RX:0xc9
+UVM_INFO ./tb/tb_spi.sv(264) @ 24265000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xf2, RX:0xce | [Slave] TX:0xce, RX:0xf2
+UVM_INFO ./tb/tb_spi.sv(264) @ 25275000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x37, RX:0xd8 | [Slave] TX:0xd8, RX:0x37
+UVM_INFO ./tb/tb_spi.sv(264) @ 26285000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xdb, RX:0x57 | [Slave] TX:0x57, RX:0xdb
+UVM_INFO ./tb/tb_spi.sv(264) @ 27295000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x18, RX:0xef | [Slave] TX:0xef, RX:0x18
+UVM_INFO ./tb/tb_spi.sv(264) @ 28305000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x29, RX:0x26 | [Slave] TX:0x26, RX:0x29
+UVM_INFO ./tb/tb_spi.sv(264) @ 29315000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x0, RX:0x23 | [Slave] TX:0x23, RX:0x0
+UVM_INFO ./tb/tb_spi.sv(264) @ 30325000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x29, RX:0xfa | [Slave] TX:0xfa, RX:0x29
+UVM_INFO ./tb/tb_spi.sv(264) @ 31335000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xba, RX:0xb1 | [Slave] TX:0xb1, RX:0xba
+UVM_INFO ./tb/tb_spi.sv(264) @ 32345000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x7f, RX:0xee | [Slave] TX:0xee, RX:0x7f
+UVM_INFO ./tb/tb_spi.sv(264) @ 33355000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x32, RX:0x9b | [Slave] TX:0x9b, RX:0x32
+UVM_INFO ./tb/tb_spi.sv(264) @ 34365000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xf6, RX:0x4a | [Slave] TX:0x4a, RX:0xf6
+UVM_INFO ./tb/tb_spi.sv(264) @ 35375000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xc4, RX:0xd0 | [Slave] TX:0xd0, RX:0xc4
+UVM_INFO ./tb/tb_spi.sv(264) @ 36385000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xbd, RX:0x68 | [Slave] TX:0x68, RX:0xbd
+UVM_INFO ./tb/tb_spi.sv(264) @ 37395000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xef, RX:0x81 | [Slave] TX:0x81, RX:0xef
+UVM_INFO ./tb/tb_spi.sv(264) @ 38405000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xb3, RX:0x2f | [Slave] TX:0x2f, RX:0xb3
+UVM_INFO ./tb/tb_spi.sv(264) @ 39415000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xcf, RX:0x79 | [Slave] TX:0x79, RX:0xcf
+UVM_INFO ./tb/tb_spi.sv(264) @ 40425000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x4a, RX:0x6f | [Slave] TX:0x6f, RX:0x4a
+UVM_INFO ./tb/tb_spi.sv(264) @ 41435000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x44, RX:0x5f | [Slave] TX:0x5f, RX:0x44
+UVM_INFO ./tb/tb_spi.sv(264) @ 42445000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xd, RX:0xda | [Slave] TX:0xda, RX:0xd
+UVM_INFO ./tb/tb_spi.sv(264) @ 43455000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xfc, RX:0x88 | [Slave] TX:0x88, RX:0xfc
+UVM_INFO ./tb/tb_spi.sv(264) @ 44465000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x1, RX:0x64 | [Slave] TX:0x64, RX:0x1
+UVM_INFO ./tb/tb_spi.sv(264) @ 45475000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xf7, RX:0x39 | [Slave] TX:0x39, RX:0xf7
+UVM_INFO ./tb/tb_spi.sv(264) @ 46485000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xba, RX:0xf7 | [Slave] TX:0xf7, RX:0xba
+UVM_INFO ./tb/tb_spi.sv(264) @ 47495000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0xff, RX:0x8b | [Slave] TX:0x8b, RX:0xff
+UVM_INFO ./tb/tb_spi.sv(264) @ 48505000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x1d, RX:0x10 | [Slave] TX:0x10, RX:0x1d
+UVM_INFO ./tb/tb_spi.sv(264) @ 49515000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x3b, RX:0xe0 | [Slave] TX:0xe0, RX:0x3b
+UVM_INFO ./tb/tb_spi.sv(264) @ 50525000: uvm_test_top.env.scb [SCB] [PASS] [Master] TX:0x23, RX:0x43 | [Slave] TX:0x43, RX:0x23
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 50535000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ./tb/tb_spi.sv(273) @ 50535000: uvm_test_top.env.scb [SCB] 
+================ SCOREBOARD REPORT ================
+UVM_INFO ./tb/tb_spi.sv(274) @ 50535000: uvm_test_top.env.scb [SCB]  PASS: 50
+UVM_INFO ./tb/tb_spi.sv(275) @ 50535000: uvm_test_top.env.scb [SCB]  FAIL: 0
+UVM_INFO ./tb/tb_spi.sv(276) @ 50535000: uvm_test_top.env.scb [SCB] ===================================================
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 50535000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 50535000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   58
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SCB]    54
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time             50535000
+Simulation complete, time is 50535000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 50535000 ps
+CPU Time:      0.210 seconds;       Data structure size:   0.4Mb
+Thu May  7 20:06:45 2026
+debExit

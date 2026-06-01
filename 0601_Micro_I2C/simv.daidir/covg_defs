@@ -1,0 +1,157 @@
+global coverage_group 0 0 $unit::axi_i2c_coverage::cg_data __coverage_axi_i2c_coverage.cg_data unused_axi_i2c_coverage_cg_data_loop_label $unit 0 1 0 1 $unit::./rtl/I2C_Slave.sv::./rtl/Micro_I2C.sv...@1459434777 0  ( 0 
+)
+ 1 1
+ 0 56 /home/hedu24/MOOK_WORK/0601_Micro_I2C/tb/tb_Micro_I2C.sv
+ 308 0 0 0 1 0 0 0 0  1
+0
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+0
+ 12 cp_tx_data_m 309 0 0 0 0 0 0 143 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn 143 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 21 1 1 0 0 1 1 4 zero 310 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_01 311 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_10 312 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 lsb_only 313 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 msb_only 314 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range0 315 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_0 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_5 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range1 316 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_6 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_7 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range2 317 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_8 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_9 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range3 318 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_a 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range4 319 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_c 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_d 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range5 320 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_e 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_f 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range6 321 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_10 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_11 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range7 322 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_12 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_13 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range8 323 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_4 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_14 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range9 324 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_15 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_16 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangea 325 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_17 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_18 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangeb 326 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_19 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1a 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangec 327 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1b 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1c 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 ranged 328 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1d 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1e 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangee 329 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1f 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_20 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangef 330 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_21 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_22 0 0 0 0 0
+ 0
+
+ 12 cp_tx_data_s 332 0 0 0 0 0 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_23 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_23 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 21 1 1 0 0 1 1 4 zero 333 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_01 334 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_10 335 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 lsb_only 336 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 msb_only 337 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range0 338 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_0 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_5 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range1 339 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_6 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_7 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range2 340 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_8 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_9 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range3 341 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_a 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range4 342 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_c 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_d 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range5 343 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_e 0 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_f 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range6 344 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_10 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_11 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range7 345 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_12 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_13 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range8 346 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_4 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_14 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range9 347 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_15 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_16 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangea 348 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_17 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_18 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangeb 349 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_19 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1a 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangec 350 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1b 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1c 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 ranged 351 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1d 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1e 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangee 352 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_1f 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_20 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangef 353 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_21 0 146 _vcs_unit__1459434777_axi_i2c_coverage_11_0::_vcs_unit__1459434777_axi_i2c_coverage_11_0__vcs_unit__1459434777_axi_i2c_coverage_11_0_cg_data_fn_22 0 0 0 0 0
+ 0
+
+end_coverage_group

@@ -1,0 +1,21 @@
+<Command name="schRTLInfo"  delimiter="."  >
+<RTLBlock >
+<RTLInfo   name="state_0"  type="2"  fileName="./rtl/spi_master.v"  >
+    <Seg beginLine="162"  endLine="210"  />
+  </RTLInfo>
+ <Instance name="tb_axi_spi_uvm.DUT_AXI_SPI_MASTER.U_SPU_MASTER"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="c_state_1"  type="2"  fileName="./rtl/spi_slave.v"  >
+    <Seg beginLine="97"  endLine="174"  />
+  </RTLInfo>
+ <Instance name="slave_top.U_SPI_SLAVE"  />
+<Instance name="tb_axi_spi_uvm.TARGET_SPI_SLAVE"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="user_verbosity_2"  type="2"  fileName="/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv"  >
+    <Seg beginLine="47"  endLine="197"  />
+  </RTLInfo>
+ <Instance name="uvm_custom_install_verdi_recording"  />
+</RTLBlock>
+ </Command>

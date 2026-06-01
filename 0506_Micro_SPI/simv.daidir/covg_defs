@@ -1,0 +1,157 @@
+global coverage_group 0 0 $unit::axi_spi_coverage::cg_data __coverage_axi_spi_coverage.cg_data unused_axi_spi_coverage_cg_data_loop_label $unit 0 1 0 1 $unit::./rtl/spi_master.v::./rtl/spi_slave.v...@417714060 0  ( 0 
+)
+ 1 1
+ 0 50 /home/hedu24/MOOK_WORK/0506_Micro_SPI/tb/tb_spi.sv
+ 292 0 0 0 1 0 0 0 0  1
+0
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+0
+ 12 cp_tx_data_m 293 0 0 0 0 0 0 140 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn 140 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 21 1 1 0 0 1 1 4 zero 294 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_01 295 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_10 296 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 lsb_only 297 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 msb_only 298 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range0 299 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_0 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_5 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range1 300 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_6 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_7 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range2 301 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_8 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_9 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range3 302 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_a 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range4 303 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_c 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_d 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range5 304 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_e 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_f 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range6 305 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_10 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_11 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range7 306 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_12 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_13 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range8 307 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_4 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_14 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range9 308 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_15 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_16 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangea 309 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_17 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_18 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangeb 310 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_19 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1a 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangec 311 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1b 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1c 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 ranged 312 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1d 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1e 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangee 313 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1f 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_20 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangef 314 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_21 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_22 0 0 0 0 0
+ 0
+
+ 12 cp_tx_data_s 316 0 0 0 0 0 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_23 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_23 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 21 1 1 0 0 1 1 4 zero 317 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_01 318 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_10 319 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 lsb_only 320 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 msb_only 321 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range0 322 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_0 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_5 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range1 323 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_6 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_7 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range2 324 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_8 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_9 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range3 325 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_a 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range4 326 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_c 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_d 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range5 327 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_e 0 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_f 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range6 328 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_10 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_11 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range7 329 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_12 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_13 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range8 330 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 142 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_4 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_14 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 range9 331 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_15 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_16 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangea 332 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_17 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_18 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangeb 333 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_19 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1a 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangec 334 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1b 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1c 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 ranged 335 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1d 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1e 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangee 336 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_1f 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_20 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 rangef 337 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_21 0 143 _vcs_unit__417714060_axi_spi_coverage_11_0::_vcs_unit__417714060_axi_spi_coverage_11_0__vcs_unit__417714060_axi_spi_coverage_11_0_cg_data_fn_22 0 0 0 0 0
+ 0
+
+end_coverage_group

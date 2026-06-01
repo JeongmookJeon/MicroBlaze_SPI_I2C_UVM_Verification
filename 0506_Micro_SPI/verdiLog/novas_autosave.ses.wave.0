@@ -1,0 +1,104 @@
+Magic 271485
+Revision Verdi_W-2024.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 2398 645 198 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/hedu24/MOOK_WORK/0506_Micro_SPI/inter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 1088891.937800
+cursor 5000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 25
+; marker line index
+markerPos 39
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "vif(axi_spi_if)"
+activeDirFile "" "/home/hedu24/MOOK_WORK/0506_Micro_SPI/inter.fsdb"
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/awprot[2:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/wstrb[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/arprot[2:0]
+addSignal -h 15 /tb_axi_spi_uvm/vif/clk
+addSignal -h 15 /tb_axi_spi_uvm/vif/rst_n
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/awaddr[3:0]
+addSignal -h 15 /tb_axi_spi_uvm/vif/awvalid
+addSignal -h 15 /tb_axi_spi_uvm/vif/awready
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/wdata[31:0]
+addSignal -h 15 /tb_axi_spi_uvm/vif/wvalid
+addSignal -h 15 /tb_axi_spi_uvm/vif/wready
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/bresp[1:0]
+addSignal -h 15 /tb_axi_spi_uvm/vif/bvalid
+addSignal -h 15 /tb_axi_spi_uvm/vif/bready
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/araddr[3:0]
+addSignal -h 15 /tb_axi_spi_uvm/vif/arvalid
+addSignal -h 15 /tb_axi_spi_uvm/vif/arready
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/rdata[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/rresp[1:0]
+addSignal -h 15 /tb_axi_spi_uvm/vif/rvalid
+addSignal -h 15 /tb_axi_spi_uvm/vif/rready
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/slave_tx_data[7:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/vif/slave_rx_data[7:0]
+addSignal -h 15 /tb_axi_spi_uvm/vif/slave_done
+addGroup "U_SPU_MASTER"
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/clk
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/rst
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/cpol
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/cpha
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/clk_div[7:0]
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/start
+addSignal -h 15 -UNSIGNED -BIN /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/tx_data[7:0]
+addSignal -h 15 -UNSIGNED -BIN /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/rx_data[7:0]
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/sclk
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/mosi
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/miso
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/cs_n
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/busy
+addSignal -h 15 /tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/done
+addGroup "TARGET_SPI_SLAVE"
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/clk
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/rst
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/sclk
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/cs_n
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/mosi
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/TARGET_SPI_SLAVE/tx_data[7:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_axi_spi_uvm/TARGET_SPI_SLAVE/rx_data[7:0]
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/miso
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/done
+addSignal -h 15 /tb_axi_spi_uvm/TARGET_SPI_SLAVE/busy
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

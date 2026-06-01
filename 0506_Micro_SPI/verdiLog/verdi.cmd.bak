@@ -1,0 +1,783 @@
+verdiSetActWin -dock widgetDock_<Watch>
+simSetSimulator "-vcssv" -exec "simv" -args
+debImport "-dbdir" "simv.daidir" "-covdir" "coverage.vdb"
+wvCreateWindow
+wvOpenFile -win $_nWave2 {/home/hedu24/MOOK_WORK/0506_Micro_SPI/novas.fsdb}
+verdiSetActWin -win $_nWave2
+verdiWindowResize -win $_Verdi_1 "1293" "82" "1226" "1182"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_axi_spi_uvm.vif" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+srcTBInvokeSim
+verdiSetActWin -win $_InteractiveConsole_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_2
+verdiSetActWin -win $_nWave2
+srcHBDrag -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+wvDumpScope "tb_axi_spi_uvm.vif"
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 0)}
+wvRenameGroup -win $_nWave2 {G1} {vif(axi_spi_if)}
+wvAddSignal -win $_nWave2 "/tb_axi_spi_uvm/vif/clk" "/tb_axi_spi_uvm/vif/rst_n" \
+           "/tb_axi_spi_uvm/vif/awaddr\[3:0\]" \
+           "/tb_axi_spi_uvm/vif/awprot\[2:0\]" "/tb_axi_spi_uvm/vif/awvalid" \
+           "/tb_axi_spi_uvm/vif/awready" "/tb_axi_spi_uvm/vif/wdata\[31:0\]" \
+           "/tb_axi_spi_uvm/vif/wstrb\[3:0\]" "/tb_axi_spi_uvm/vif/wvalid" \
+           "/tb_axi_spi_uvm/vif/wready" "/tb_axi_spi_uvm/vif/bresp\[1:0\]" \
+           "/tb_axi_spi_uvm/vif/bvalid" "/tb_axi_spi_uvm/vif/bready" \
+           "/tb_axi_spi_uvm/vif/araddr\[3:0\]" \
+           "/tb_axi_spi_uvm/vif/arprot\[2:0\]" "/tb_axi_spi_uvm/vif/arvalid" \
+           "/tb_axi_spi_uvm/vif/arready" "/tb_axi_spi_uvm/vif/rdata\[31:0\]" \
+           "/tb_axi_spi_uvm/vif/rresp\[1:0\]" "/tb_axi_spi_uvm/vif/rvalid" \
+           "/tb_axi_spi_uvm/vif/rready" \
+           "/tb_axi_spi_uvm/vif/slave_tx_data\[7:0\]" \
+           "/tb_axi_spi_uvm/vif/slave_rx_data\[7:0\]" \
+           "/tb_axi_spi_uvm/vif/slave_done"
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 0)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 24)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 24)}
+wvSetPosition -win $_nWave2 {("G2" 0)}
+srcTBRunSim
+wvZoomAll -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 71280935.108820 141393330.297824
+wvZoom -win $_nWave2 80597129.658562 84532418.735608
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvZoom -win $_nWave2 84683803.101528 85045179.246594
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 4
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 4
+wvScrollUp -win $_nWave2 4
+wvScrollDown -win $_nWave2 4
+wvScrollUp -win $_nWave2 2
+wvScrollDown -win $_nWave2 1
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 6 )} 
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 7)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 12 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 12 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 7)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 7)}
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSelectGroup -win $_nWave2 {G2}
+wvSetCursor -win $_nWave2 84618801.492771 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 24 )} 
+wvSetCursor -win $_nWave2 84773636.584580 -snap {("G2" 0)}
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 84891538.535224 -snap {("vif(axi_spi_if)" 5)}
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 5 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 6 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 3 )} 
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvSelectGroup -win $_nWave2 {G2}
+verdiWindowResize -win $_Verdi_1 "893" "72" "1226" "1182"
+verdiWindowResize -win $_Verdi_1 "916" "67" "1604" "1182"
+wvSetCursor -win $_nWave2 84931873.273363 -snap {("vif(axi_spi_if)" 7)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSetCursor -win $_nWave2 84971392.248085 -snap {("vif(axi_spi_if)" 4)}
+wvSetCursor -win $_nWave2 84975626.423948 -snap {("vif(axi_spi_if)" 4)}
+wvSetCursor -win $_nWave2 84828841.660693 -snap {("vif(axi_spi_if)" 4)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 14 )} 
+wvSetCursor -win $_nWave2 85202860.528604 -snap {("vif(axi_spi_if)" 18)}
+wvSetCursor -win $_nWave2 85736366.687361 -snap {("vif(axi_spi_if)" 23)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSetRadix -win $_nWave2 -format Bin
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSetRadix -win $_nWave2 -format Hex
+wvSetCursor -win $_nWave2 84922902.788505 -snap {("vif(axi_spi_if)" 7)}
+wvZoomIn -win $_nWave2
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 85784219.109735 -snap {("vif(axi_spi_if)" 8)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 136302623.520611 -snap {("vif(axi_spi_if)" 23)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 24 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 1 )} 
+wvSetCursor -win $_nWave2 135413697.261960 -snap {("vif(axi_spi_if)" 1)}
+wvZoom -win $_nWave2 135393943.345101 135423574.220390
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 136204819.336528 -snap {("vif(axi_spi_if)" 19)}
+wvSetCursor -win $_nWave2 801215.300499 -snap {("vif(axi_spi_if)" 18)}
+wvSetCursor -win $_nWave2 1076690.158968 -snap {("vif(axi_spi_if)" 14)}
+wvSetCursor -win $_nWave2 683815.498453 -snap {("vif(axi_spi_if)" 22)}
+wvSetCursor -win $_nWave2 966127.024515 -snap {("vif(axi_spi_if)" 21)}
+wvSetCursor -win $_nWave2 998946.173066 -snap {("vif(axi_spi_if)" 20)}
+wvSetCursor -win $_nWave2 1156620.778061 -snap {("vif(axi_spi_if)" 19)}
+wvSetCursor -win $_nWave2 686348.280570 -snap {("vif(axi_spi_if)" 18)}
+wvSetCursor -win $_nWave2 970384.656052 -snap {("vif(axi_spi_if)" 18)}
+wvSetCursor -win $_nWave2 930430.909990 -snap {("vif(axi_spi_if)" 14)}
+wvSetCursor -win $_nWave2 544369.790098 -snap {("vif(axi_spi_if)" 13)}
+wvSetCursor -win $_nWave2 16409.574276 -snap {("vif(axi_spi_if)" 6)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 4 )} 
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 5)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 7 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 8 )} 
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 7)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 6)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 5)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 5)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 6)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 7)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 8)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 7)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 6)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 5)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 8 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 9 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 11 )} 
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 142691.950222 -snap {("vif(axi_spi_if)" 18)}
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 12842.275520 -snap {("vif(axi_spi_if)" 7)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 14 )} 
+wvSetCursor -win $_nWave2 211184.086329 -snap {("vif(axi_spi_if)" 18)}
+wvSetCursor -win $_nWave2 230447.499609 -snap {("vif(axi_spi_if)" 18)}
+wvSetCursor -win $_nWave2 230447.499609 -snap {("vif(axi_spi_if)" 18)}
+wvSetCursor -win $_nWave2 17123.034027 -snap {("vif(axi_spi_if)" 4)}
+wvSetCursor -win $_nWave2 17123.034027 -snap {("vif(axi_spi_if)" 4)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 1 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 1 2 )} 
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 2)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 2 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 1 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 18 )} 
+wvSelectGroup -win $_nWave2 {G2}
+verdiDockWidgetRestore -dock windowDock_nWave_2
+verdiSetActWin -win $_InteractiveConsole_3
+srcHBSelect "tb_axi_spi_uvm.DUT_AXI_SPI_MASTER" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_axi_spi_uvm.DUT_AXI_SPI_MASTER.SPI_v1_0_S00_AXI_inst" -win \
+           $_nTrace1
+srcHBSelect "tb_axi_spi_uvm.DUT_AXI_SPI_MASTER.U_SPU_MASTER" -win $_nTrace1
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 1)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 2)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 5)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 9)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 10)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 12)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 13)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 15)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 17)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 18)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 19)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 20)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 21)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 22)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 23)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 24)}
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvDumpScope "tb_axi_spi_uvm.DUT_AXI_SPI_MASTER.U_SPU_MASTER"
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 0)}
+wvRenameGroup -win $_nWave2 {G2} {U_SPU_MASTER}
+wvAddSignal -win $_nWave2 "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/clk" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/rst" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/cpol" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/cpha" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/clk_div\[7:0\]" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/tx_data\[7:0\]" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/done" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/busy" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/start" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/rx_data\[7:0\]" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/miso" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/sclk" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/mosi" \
+           "/tb_axi_spi_uvm/DUT_AXI_SPI_MASTER/U_SPU_MASTER/cs_n"
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 0)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 14)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 14)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+verdiSetActWin -win $_nWave2
+wvSetCursor -win $_nWave2 65638.297102 -snap {("vif(axi_spi_if)" 8)}
+wvSetCursor -win $_nWave2 922503.458188 -snap {("vif(axi_spi_if)" 23)}
+wvSetCursor -win $_nWave2 495854.527023 -snap {("vif(axi_spi_if)" 22)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 6 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+srcTBSimReset
+srcTBRunSim
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvSearchPrev -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvZoomAll -win $_nWave2
+wvSetCursor -win $_nWave2 34541829.006772 -snap {("vif(axi_spi_if)" 3)}
+wvSetCursor -win $_nWave2 767596.200150 -snap {("vif(axi_spi_if)" 0)}
+wvSetCursor -win $_nWave2 767596.200150 -snap {("vif(axi_spi_if)" 0)}
+wvSetCursor -win $_nWave2 0.000000 -snap {("vif(axi_spi_if)" 0)}
+wvZoom -win $_nWave2 0.000000 3837981.000752
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 1069234.360819 -snap {("vif(axi_spi_if)" 8)}
+wvSetCursor -win $_nWave2 1555840.680328 -snap {("U_SPU_MASTER" 6)}
+wvSetCursor -win $_nWave2 1616485.978308 -snap {("U_SPU_MASTER" 5)}
+wvSetCursor -win $_nWave2 661322.535118 -snap {("U_SPU_MASTER" 5)}
+wvSetCursor -win $_nWave2 661322.535118 -snap {("U_SPU_MASTER" 5)}
+wvSetCursor -win $_nWave2 1534903.613168 -snap {("vif(axi_spi_if)" 8)}
+wvSetCursor -win $_nWave2 581906.073478 -snap {("vif(axi_spi_if)" 22)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 18 )} 
+wvSetCursor -win $_nWave2 1396285.789213 -snap {("vif(axi_spi_if)" 16)}
+wvSetCursor -win $_nWave2 1556562.648161 -snap {("vif(axi_spi_if)" 15)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 24 )} 
+wvSetCursor -win $_nWave2 1038189.743996 -snap {("vif(axi_spi_if)" 23)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 22 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 18 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 4 )} 
+wvSetCursor -win $_nWave2 1116162.269971 -snap {("vif(axi_spi_if)" 12)}
+wvSetCursor -win $_nWave2 1160924.275623 -snap {("vif(axi_spi_if)" 12)}
+wvZoomIn -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 606793.234178 -snap {("U_SPU_MASTER" 6)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSetCursor -win $_nWave2 984145.031413 -snap {("U_SPU_MASTER" 10)}
+wvSetCursor -win $_nWave2 520933.073813 -snap {("vif(axi_spi_if)" 22)}
+wvSetCursor -win $_nWave2 546907.576108 -snap {("vif(axi_spi_if)" 22)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 22 )} 
+wvSetCursor -win $_nWave2 1157308.380049 -snap {("vif(axi_spi_if)" 12)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 5 )} 
+wvSetCursor -win $_nWave2 897563.357096 -snap {("vif(axi_spi_if)" 23)}
+verdiDockWidgetRestore -dock windowDock_nWave_2
+verdiSetActWin -win $_InteractiveConsole_3
+wvSetCursor -win $_nWave2 1064673.548577 -snap {("vif(axi_spi_if)" 7)}
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 14 )} 
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+verdiWindowResize -win $_Verdi_1 "847" "50" "1604" "1182"
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 205824.520624 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 207294.695771 -snap {("U_SPU_MASTER" 11)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectGroup -win $_nWave2 {G3}
+wvScrollUp -win $_nWave2 14
+wvSetCursor -win $_nWave2 61747.356187 -snap {("vif(axi_spi_if)" 5)}
+wvSetCursor -win $_nWave2 284478.891005 -snap {("vif(axi_spi_if)" 14)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 5 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 6 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 8 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 9 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 10 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 11 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 12 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 13 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 14 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 15 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 16 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 15 )} 
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 14)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 13)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 12)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 11)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 10)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 9)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 8)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 7)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 6)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 5)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 4)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 2)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 2)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 20 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 21 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 18 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 19 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 18 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 15 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 16 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 17 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 18 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 19 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 20 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 20 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 22 )} 
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 23 )} 
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSetCursor -win $_nWave2 7286.763124 -snap {("vif(axi_spi_if)" 7)}
+verdiSetActWin -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 2 )} 
+wvScrollDown -win $_nWave2 14
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_axi_spi_uvm.TARGET_SPI_SLAVE" -win $_nTrace1
+wvScrollDown -win $_nWave2 0
+srcHBDrag -win $_nTrace1
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 14)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 15)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 17)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 18)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 22)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 23)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 0)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 1)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 2)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 3)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 4)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 5)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 6)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 7)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 7)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 5)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 3)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 2)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 24)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 21)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 18)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 13)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 12)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 11)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 12)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 13)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 14)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 16)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 17)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 18)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 19)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 21)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 22)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 24)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 1)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 2)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 3)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 4)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 5)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 6)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 7)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 12)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 13)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 14)}
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvSetPosition -win $_nWave2 {("vif(axi_spi_if)" 3)}
+wvSetPosition -win $_nWave2 {("G3" 0)}
+wvDumpScope "tb_axi_spi_uvm.TARGET_SPI_SLAVE"
+wvSetPosition -win $_nWave2 {("TARGET_SPI_SLAVE" 0)}
+wvRenameGroup -win $_nWave2 {G3} {TARGET_SPI_SLAVE}
+wvAddSignal -win $_nWave2 "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/clk" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/rst" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/sclk" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/cs_n" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/mosi" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/tx_data\[7:0\]" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/rx_data\[7:0\]" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/miso" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/done" \
+           "/tb_axi_spi_uvm/TARGET_SPI_SLAVE/busy"
+wvSetPosition -win $_nWave2 {("TARGET_SPI_SLAVE" 0)}
+wvSetPosition -win $_nWave2 {("TARGET_SPI_SLAVE" 10)}
+wvSetPosition -win $_nWave2 {("TARGET_SPI_SLAVE" 10)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 15
+srcTBSimReset
+srcTBRunSim
+wvZoomAll -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvZoom -win $_nWave2 0.000000 3446403.209459
+wvZoom -win $_nWave2 0.000000 13971.904903
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "TARGET_SPI_SLAVE" 8 )} 
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 299678.479221 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 212675.049770 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 328679.622372 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 391515.432531 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 449517.718832 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 493019.433558 -snap {("U_SPU_MASTER" 11)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "vif(axi_spi_if)" 15 )} 
+wvSetCursor -win $_nWave2 758863.245770 -snap {("vif(axi_spi_if)" 15)}
+wvScrollDown -win $_nWave2 22
+verdiInvokeApp -vdCov
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 9 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 8 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvZoom -win $_nWave2 0.000000 1088891.937800
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 11 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 13 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 6 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 6 )} 
+wvSetRadix -win $_nWave2 -format Bin
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 12 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 11 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 13 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 12)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 11 12 13 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 12 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 6 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 5 6 7 8 9 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 6 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 6)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 7)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 12)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 12 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 11 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 12)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 12)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 13 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 9 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 11 )} 
+wvSetCursor -win $_nWave2 183805.372146 -snap {("U_SPU_MASTER" 11)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 2 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 12 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 12 )} 
+wvSetRadix -win $_nWave2 -format Bin
+wvSetCursor -win $_nWave2 210653.347853 -snap {("U_SPU_MASTER" 13)}
+wvSetCursor -win $_nWave2 176577.070995 -snap {("U_SPU_MASTER" 13)}
+wvSetCursor -win $_nWave2 170897.691518 -snap {("U_SPU_MASTER" 13)}
+wvSetCursor -win $_nWave2 225109.950157 -snap {("U_SPU_MASTER" 13)}
+wvSetCursor -win $_nWave2 218397.956230 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 213751.191204 -snap {("U_SPU_MASTER" 11)}
+wvSetCursor -win $_nWave2 216332.727330 -snap {("TARGET_SPI_SLAVE" 5)}
+wvSetCursor -win $_nWave2 199810.896125 -snap {("TARGET_SPI_SLAVE" 5)}
+wvSelectSignal -win $_nWave2 {( "TARGET_SPI_SLAVE" 5 )} 
+wvSelectSignal -win $_nWave2 {( "TARGET_SPI_SLAVE" 7 )} 
+wvSelectSignal -win $_nWave2 {( "TARGET_SPI_SLAVE" 8 )} 
+wvSetCursor -win $_nWave2 251441.618638 -snap {("TARGET_SPI_SLAVE" 8)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 11 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 13 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 7 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 14 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 10 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 12 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSelectSignal -win $_nWave2 {( "TARGET_SPI_SLAVE" 1 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 7 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 5 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 6 )} 
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 7 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 7)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 12)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 13)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 14)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 14)}
+wvSelectSignal -win $_nWave2 {( "U_SPU_MASTER" 6 )} 
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 7)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 8)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 9)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 10)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 11)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 12)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 13)}
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 14)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("U_SPU_MASTER" 14)}
+wvSelectSignal -win $_nWave2 {( "TARGET_SPI_SLAVE" 2 )} 
+wvSetCursor -win $_nWave2 33559.969633 -snap {("U_SPU_MASTER" 4)}
+wvSetCursor -win $_nWave2 21684.903455 -snap {("U_SPU_MASTER" 5)}
+debExit

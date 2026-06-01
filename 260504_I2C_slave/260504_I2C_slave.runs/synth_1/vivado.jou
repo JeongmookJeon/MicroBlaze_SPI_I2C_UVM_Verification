@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  5 15:40:02 2026
+# Process ID: 16868
+# Current directory: D:/JJM/260504_I2C_slave/260504_I2C_slave.runs/synth_1
+# Command line: vivado.exe -log i2c_slave_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c_slave_top.tcl
+# Log file: D:/JJM/260504_I2C_slave/260504_I2C_slave.runs/synth_1/i2c_slave_top.vds
+# Journal file: D:/JJM/260504_I2C_slave/260504_I2C_slave.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source i2c_slave_top.tcl -notrace
