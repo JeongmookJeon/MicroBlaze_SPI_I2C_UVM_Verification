@@ -1,12 +1,12 @@
-<div align="center">
-  <img src="images/01_main_cover.png" width="100%" alt="Project Title Cover">
-</div>
-<br/>
+
 
 # 🚀 MicroBlaze AXI4 기반 SPI & I2C 통신 프로토콜 설계 및 UVM 검증
 
 본 프로젝트는 온디바이스 AI 반도체 설계를 위한 **AXI4 기반의 SPI 및 I2C 페리퍼럴(Peripheral) 하드웨어 설계와 UVM(Universal Verification Methodology) 검증 포트폴리오**입니다. 
-
+<div align="center">
+  <img src="images/01_main_cover.png" width="100%" alt="Project Title Cover">
+</div>
+<br/>
 AMBA AXI4 버스 프로토콜을 활용하여 CPU(Master)와 하위 페리퍼럴(Slave) 간의 통신 아키텍처를 구현하였으며, 하드웨어(RTL) 계층부터 최상위 응용 소프트웨어(Application) 계층까지 4단계의 Layer 구조를 통해 전체 시스템의 제어 및 통신 시나리오를 통합하고 검증하였습니다.
 
 * **개발자:** 전정묵 (대한상공회의소 서울기술교육센터 온디바이스 AI 반도체 설계)
